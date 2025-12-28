@@ -1,0 +1,163 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.5/schema.json
+cv:
+  name: Gabriel Garcia Marques
+  headline:
+  location: São Paulo, SP
+  email: gabrielgamarques1@gmail.com
+  photo:
+  phone:
+  website: https://gamarques.vercel.app/
+  social_networks:
+    - network: LinkedIn
+      username: gabrielgamarques
+    - network: GitHub
+      username: Gamarques
+  custom_connections:
+  sections:
+    About:
+      - Full Stack Developer with a strong backend and architecture focus, experienced in designing and implementing multi-tenant SaaS platforms using microservices, event-driven architectures, and cloud-native infrastructure.
+      - Proven experience with NestJS, PostgreSQL, Docker, Kubernetes, CI/CD pipelines, and secure authorization models (RBAC, RLS).
+    education:
+      - institution: São Judas Tadeu University
+        area: Information Systems
+        degree: BS
+        date:
+        start_date: 2020-06
+        end_date: 2024-06
+        location: São Paulo, SP
+        summary:
+        highlights:
+          - Software Engineering — Requirements analysis, system modeling, architectural best practices, design patterns, and code organization for scalable, long-term software projects.
+          - Data Structures and Algorithms — Application of efficient data structures and complexity analysis to build high-performance, scalable, backend-oriented solutions.
+          - Project Management — Planning, scope definition, task prioritization, risk management, and cross-functional collaboration, with experience working in Agile environments to deliver projects on time and with measurable results.
+    experience:
+      - company: Taugor Corporation
+        position: Full Stack Developer
+        start_date: 2025-10
+        end_date: present
+        location: São Paulo, Brazil
+        summary: >
+          Full Stack Developer working on a multi-tenant SaaS platform focused on document
+          automation and workflow management, using a microservices architecture and
+          cloud-native infrastructure.
+        highlights:
+          - Designed and implemented a microservices-based backend using NestJS, TypeScript, and PostgreSQL, supporting multi-company (multi-tenant) isolation.
+          - Implemented authentication and authorization flows with JWT, RBAC, and Row-Level Security (RLS) at the database level.
+          - Built scalable CRUD services for companies, customers, templates, products, sellers, and payment methods following domain-driven principles.
+          - Developed asynchronous workflows using message queues and background jobs for notifications, document generation, and webhooks.
+          - Containerized services with Docker and deployed them to Kubernetes (GKE), integrating CI/CD pipelines for automated build and deployment.
+          - Collaborated closely with product and engineering teams to define system architecture, APIs, and technical standards.
+      - company: Freelance
+        position: Back End Developer
+        start_date: 2025-01
+        end_date: 2025-09
+        location: Remote
+        summary: >
+          Backend-focused freelance developer delivering secure, scalable APIs and
+          automation-driven solutions, with strong emphasis on reliability, performance,
+          and system integration.
+        highlights:
+          - Developed secure RESTful APIs with JWT-based authentication, API versioning, and consistent validation layers, improving system reliability and scalability.
+          - Designed and implemented complete CRUD operations using TypeORM and PostgreSQL, reducing runtime errors and simplifying long-term maintenance.
+          - Implemented scheduled cron jobs to automate critical workflows, eliminating repetitive manual processes.
+          - Led the development of a facial recognition authentication system, strengthening security through biometric validation.
+          - Integrated OCR solutions for automated data extraction from documents and images, significantly accelerating data processing workflows.
+          - Built real-time integrations with external APIs (e.g., sports data providers), ensuring continuous data synchronization and availability.
+      - company: Freelance
+        position: Full Stack Developer
+        start_date: 2024-01
+        end_date: present
+        location: Remote
+        summary: >
+          Full Stack freelance developer delivering end-to-end web applications,
+          from backend architecture to modern, responsive user interfaces.
+        highlights:
+          - Developed full stack applications using the MERN stack, delivering customized solutions tailored to client requirements.
+          - Built SEO-optimized landing pages and full-featured e-commerce platforms, including cart, checkout, and payment integrations.
+          - Designed RESTful APIs and integrated external services such as payment gateways, notification providers, and authentication services.
+          - Developed modern, responsive user interfaces using React, TypeScript, and TailwindCSS, ensuring usability, performance, and accessibility.
+          - Managed source control, containerization, and deployments using Git and Docker, ensuring scalable and stable application delivery.
+          - Worked directly with clients to gather requirements, define timelines, and deliver solutions aligned with business goals.
+
+    projects:
+      - name: "Document Facial Verification System"
+        start_date: 2025-01
+        end_date: 2025-09
+        location: Remote
+        summary: >
+          Backend system for facial verification by comparing faces extracted from identity
+          documents and submitted images, improving document validation and fraud detection.
+        highlights:
+          - Implemented facial comparison pipelines to match faces between identity documents and user-provided images.
+          - Built backend services to extract, normalize, and process facial features from document images.
+          - Integrated the verification flow into document processing pipelines to support automated validation.
+          - Improved fraud detection accuracy by validating identity consistency across submitted documents.
+
+      - name: "OCR Document Processing Automation"
+        start_date: 2025-01
+        end_date: 2025-09
+        location: Remote
+        summary: >
+          Automated document processing solution leveraging OCR to extract structured
+          data from images and scanned documents.
+        highlights:
+          - Replaced costly cloud-based OCR with a hybrid in-house pipeline using Tesseract and NestJS.
+          - Designed data collection flow to enable supervised ML training with PyTorch.
+          - Reduced OCR costs by 35% in the first quarter and cut cloud dependency by 60% within one year.
+
+      - name: "Multi-Tenant SaaS Backend Platform"
+        start_date: 2024-11
+        end_date: present
+        location: Remote
+        summary: >
+          Cloud-native, multi-tenant backend platform focused on document automation,
+          approval workflows, and scalable API architecture.
+        highlights:
+          - Designed a microservices-based backend architecture using NestJS and PostgreSQL.
+          - Implemented multi-tenancy with strict data isolation using company-based scoping and Row-Level Security (RLS).
+          - Built asynchronous workflows for notifications, document generation, and webhooks.
+          - Containerized services with Docker and deployed them to Kubernetes with CI/CD pipelines.
+          - Implemented role-based access control (RBAC) and secure authentication flows with JWT.
+
+    skills:
+      - label: Languages
+        details: TypeScript, JavaScript, Python
+
+      - label: Backend
+        details: Node.js, Bun, NestJS, Express, FastAPI
+
+      - label: Databases & Caching
+        details: PostgreSQL, MongoDB, Redis
+
+      - label: Cloud & Infrastructure
+        details: Docker, Kubernetes, AWS, GCP
+
+      - label: Data & ML
+        details: PyTorch, OCR, Computer Vision
+
+      - label: Frontend
+        details: React, Vue.js, TailwindCSS
+
+      - label: Version Control
+        details: Git, GitHub, GitLab
+
+design:
+  theme: classic
+locale:
+  language: english
+settings:
+  current_date: "2025-12-22"
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: false
+  bold_keywords: []
